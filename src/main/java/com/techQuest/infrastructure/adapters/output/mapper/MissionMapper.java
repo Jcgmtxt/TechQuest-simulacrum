@@ -5,7 +5,7 @@ import com.techQuest.infrastructure.adapters.output.entity.MissionEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface MissionMapper {
     MissionMapper INSTANCE = Mappers.getMapper(MissionMapper.class);
 
